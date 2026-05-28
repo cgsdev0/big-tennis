@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjf8c72ftblob"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_0xm2m"]
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0xm2m"]
+
+[node name="Ball" type="RigidBody2D" unique_id=220514867]
+physics_material_override = SubResource("PhysicsMaterial_0xm2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=257565929]
+shape = SubResource("CircleShape2D_0xm2m")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1074712521]
+polygon = PackedVector2Array(-7, -9, 3, -10, 9, -5, 10, 3, 4, 9, -4, 9, -10, 3)
