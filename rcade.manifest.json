@@ -1,0 +1,18 @@
+{
+  "$schema": "https://rcade.dev/manifest.schema.json",
+  "name": "big-tennis",
+  "display_name": "Big Tennis",
+  "description": "tennis but big",
+  "visibility": "public",
+  "authors": [
+    {
+      "display_name": "ty"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "@rcade/input-classic",
+      "version": "1.0.0"
+    }
+  ]
+}
