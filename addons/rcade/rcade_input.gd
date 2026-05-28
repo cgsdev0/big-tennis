@@ -9,8 +9,6 @@ func _ready():
 	if OS.has_feature("rcade"):
 		DisplayServer.window_set_flag(DisplayServer.WINDOW_FLAG_NO_FOCUS, false)
 		process_priority = -10000
-	else:
-		process_mode = Node.PROCESS_MODE_DISABLED
 
 var _classic_enabled = false
 func enable_classic_controls() -> void:
@@ -67,6 +65,10 @@ func ring_append(idx):
 	_acc_delta[idx] = 0
 		
 func _process(delta):
+	if Input.is_action_just_pressed("add_angle"):
+		_angles[0] += PI/8
+	if Input.is_action_just_pressed("sub_angle"):
+		_angles[0] -= PI/8
 	ring_append(0)
 	ring_append(1)
 

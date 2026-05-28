@@ -13,5 +13,6 @@ var ball_scene = preload("res://scenes/ball.tscn")
 
 func on_timer():
 	var ball = ball_scene.instantiate()
+	ball.add_to_group("ball")
 	add_child(ball)
 	ball.position.x += randf_range(-0.1, 0.1)
