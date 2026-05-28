@@ -8,7 +8,7 @@ func _ready():
 	# uncomment this and add the dependency
 	# to your manifest to enable spinners:
 	#
-	# RCadeInput.enable_spinners()
+	RCadeInput.enable_spinners()
 	
 func get_input():
 	var input_direction = Input.get_vector("p1_left", "p1_right", "p1_up", "p1_down")
